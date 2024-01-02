@@ -2,21 +2,21 @@
 Create a conda environment with pytorch and scikit-learn :
 ```
 conda create --name wlns_env python=3.7
-source activate wlns_env
+source activate alpw_env
 conda install --file requirements.txt -c pytorch
 ```
 
 ## Datasets
 Once the datasets are downloaded, add them to the package data folder by running :
 ```
-python WLNS/process.py
+python ALPW/process.py
 ```
 
 This will create the files required to compute the filtered metrics.
 
 ## Reproducing results
 
-* In order to reproduce the results of ``WLNS" on the three datasets in the paper, go to the WLNS/ folder and run the following commands
+* In order to reproduce the results of ``ALPW" on the three datasets in the paper, go to the ALPW/ folder and run the following commands
 
 ```
 python learner.py --dataset ICEWS14 --model TComplEx --rank 2000 --emb_reg 0.0025 --time_reg 0.001 --alpha 0.3 --beta -5
@@ -31,5 +31,5 @@ python learner.py --dataset GDELT --model TComplEx --rank 2000 --emb_reg 0 --tim
 We refer to the code of TComplEx. Thanks for their great contributions!
 
 ## License
-WLNS is CC-BY-NC licensed, as found in the LICENSE file.
+ALPW is CC-BY-NC licensed, as found in the LICENSE file.
 
